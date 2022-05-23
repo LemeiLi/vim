@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/caesar/XR871/03_SDK/xr871sdk/project/common/startup'
+let g:netrw_dirhist_2='/home/caesar/XR871/03_SDK/xr871sdk/project/common/startup/gcc'
+let g:netrw_dirhist_3='/home/caesar/xxdk/python'
+let g:netrw_dirhist_4='/home/caesar/ardupilot/modules/waf'
+let g:netrw_dirhist_5='/home/caesar/xxdk/unit_test/oopc'
+let g:netrw_dirhist_6='/home/caesar/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/common'
