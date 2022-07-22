@@ -93,8 +93,10 @@ alias mb='make backup'
 #alias find='find -name'
 #alias grep='grep -n -E -r'
 alias nl='nl -b a'	            #add line number for text: nl xxdk.c > xxdkline.c
-alias fn='ls -lR|grep "^-"|wc -l""' # Get total file numbers in xxdk directory
-alias fl="echo \".c\";( find ./ -name '*.c' -print0 | xargs -0 cat ) | wc -l &&  echo \".h\"; ( find ./ -name '*.h' -print0 | xargs -0 cat ) | wc -l"
+alias cfn='ls -lR|grep "^-"|wc -l""' # Get total file numbers in xxdk directory
+#alias cfl="find ./* -maxdepth 100000 -type f -exec awk 'END {print NR}' {} +"
+alias flc='find . -name "*.c" | xargs grep '^.' | wc -l'
+alias flh='find . -name "*.h" | xargs grep '^.' | wc -l'
 
 alias girl='man'
 alias f='find ./ -name'
