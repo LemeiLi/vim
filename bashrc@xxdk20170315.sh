@@ -42,6 +42,7 @@ alias b3='cd ../../../'
 alias b4='cd ../../../../'
 alias ps='ps axj'
 alias go='gnome-open'
+alias python='python3'
 
 alias du='du -sh'
 
@@ -94,9 +95,14 @@ alias mb='make backup'
 #alias grep='grep -n -E -r'
 alias nl='nl -b a'	            #add line number for text: nl xxdk.c > xxdkline.c
 alias cfn='ls -lR|grep "^-"|wc -l""' # Get total file numbers in xxdk directory
+<<<<<<< 96af218acd18b6704480fc00a15140d1ae6eda3a
 #alias cfl="find ./* -maxdepth 100000 -type f -exec awk 'END {print NR}' {} +"
 alias flc='find . -name "*.c" | xargs grep '^.' | wc -l'
 alias flh='find . -name "*.h" | xargs grep '^.' | wc -l'
+=======
+alias cfl="find ./* -maxdepth 100000 -type f -exec awk 'END {print NR}' {} +"
+alias fl='wc -l'
+>>>>>>> [Description]: cscope
 
 alias girl='man'
 alias f='find ./ -name'
