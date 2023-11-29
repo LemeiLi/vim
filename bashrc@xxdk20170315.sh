@@ -13,7 +13,7 @@
 #########################################################################
 #!/bin/bash
 <<NOTE
-XXDK self .bashrc
+>> bash@xxdk <<
 NOTE
 
 #############################################
@@ -50,6 +50,9 @@ alias tftp-restart='sudo service tftpd-hpa restart'
 alias xinetd-restart='sudo service xinetd restart'
 alias nfs-restart='sudo /etc/init.d/nfs-kernel-server restart'
 
+alias xgrep='grep --exclude-dir=build --exclude-dir=build_vexpress --exclude=vmlinux_objdump-SDl.S.sh --exclude=tags --exclude=cscope.out --exclude=readelf_h_vmlinux.sh -nr'
+
+
 
 # CC -E xxdk.c -o xxdk.i   # preprocessing
 # CC -S xxdk.i -o xxdk.s   # compiling
@@ -79,7 +82,8 @@ alias CDA='cd /home/${USER}/pixhawk/ardupilot/'
 alias CDQ='cd /mnt/hgfs/FileShare/Qt/'
 alias CDR='cd /opt/EmbedSky/TQIMX6/TQ_COREC/rootfs/'
 alias CDU='cd /opt/EmbedSky/TQIMX6/TQ_COREC/uboot-2015.04'
-alias CDK='cd /opt/EmbedSky/TQIMX6/TQ_COREC/linux-4.1.15'
+alias cdk='cd ~/xxdk/mp1/linux-5.4.31/'
+alias cdt='cd ~/xxdk/unit_test/'
 alias CDFS='cd /mnt/hgfs/FileShare/'
 
 alias gim='gedit'
@@ -95,10 +99,15 @@ alias mb='make backup'
 #alias grep='grep -n -E -r'
 alias nl='nl -b a'	            #add line number for text: nl xxdk.c > xxdkline.c
 alias cfn='ls -lR|grep "^-"|wc -l""' # Get total file numbers in xxdk directory
+<<<<<<< 4572ea0dd532b3d7f9ea570ea78f438a1dbfde7c
 <<<<<<< 96af218acd18b6704480fc00a15140d1ae6eda3a
 #alias cfl="find ./* -maxdepth 100000 -type f -exec awk 'END {print NR}' {} +"
 alias flc='find . -name "*.c" | xargs grep '^.' | wc -l'
 alias flh='find . -name "*.h" | xargs grep '^.' | wc -l'
+=======
+alias cfl="find ./* -maxdepth 100000 -type f -exec awk 'END {print NR}' {} +"
+alias fl='wc -l'
+>>>>>>> [Description]: cscope
 =======
 alias cfl="find ./* -maxdepth 100000 -type f -exec awk 'END {print NR}' {} +"
 alias fl='wc -l'
@@ -268,10 +277,14 @@ export PATH=$PATH:/usr/lib/ccache
 export PATH=$PATH:.
 export PATH=.:$PATH
 export PATH=/usr/games:$PATH
+<<<<<<< 4572ea0dd532b3d7f9ea570ea78f438a1dbfde7c
 echo "^_^"
 
 gsettings set org.gnome.desktop.interface cursor-size 48
+=======
+>>>>>>> [Description]: cscope
 
+gsettings set org.gnome.desktop.interface cursor-size 48
 
 
 
