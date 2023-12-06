@@ -386,3 +386,9 @@ let g:SuperTabRetainCompletionType=2
 " tab -> Ctrl+x+o
 let g:SuperTabDefaultCompletionType="<C-X><C-O>" 
 
+"""""""""""""""""""""""""""""""""""""""
+" Used to show the spaces in code text
+"""""""""""""""""""""""""""""""""""""""
+highlight ExtraWhitespace ctermbg=red guibg=darkgreen
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$\| \+\ze\t/
